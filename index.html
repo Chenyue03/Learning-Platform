@@ -662,6 +662,10 @@ if (reversed == null) { reversed = false; }
 		function GoTohanoi() {
 			window.open("https://chenyue03.github.io/Learning-Platform/汉诺塔.html", "_blank");
 		}
+		this.guibing.addEventListener("click", GoToguibing);
+		function GoToguibing() {
+			window.open("https://chenyue03.github.io/Learning-Platform/归并排序.html", "_blank");
+		}
 	}
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
@@ -675,9 +679,10 @@ if (reversed == null) { reversed = false; }
 	this.hanoi.name = "hanoi";
 	this.hanoi.setTransform(920.5,533.45,3.1505,3.1494);
 	new cjs.ButtonHelper(this.hanoi, 0, 1, 2, false, new lib.汉诺塔(), 3);
-	this.instance_2 = new lib.归并排序();
-	this.instance_2.setTransform(347.75,533.45,3.1505,3.1494);
-	new cjs.ButtonHelper(this.instance_2, 0, 1, 2, false, new lib.归并排序(), 3);
+	this.guibing = new lib.归并排序();
+	this.guibing.name = "guibing";
+	this.guibing.setTransform(347.75,533.45,3.1505,3.1494);
+	new cjs.ButtonHelper(this.guibing, 0, 1, 2, false, new lib.归并排序(), 3);
 	this.kuaisu = new lib.快速();
 	this.kuaisu.name = "kuaisu";
 	this.kuaisu.setTransform(917.6,392.65,3.1505,3.1494);
@@ -702,12 +707,12 @@ if (reversed == null) { reversed = false; }
 	this.Fibo.name = "Fibo";
 	this.Fibo.setTransform(348.4,258.2,3.1505,3.1505,0,0,0,0.2,0);
 	new cjs.ButtonHelper(this.Fibo, 0, 1, 2, false, new lib.tubeyellow(), 3);
-	this.instance_3 = new lib.CachedBmp_1();
-	this.instance_3.setTransform(472.9,57.2,0.5,0.5);
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.Fibo},{t:this.erfen},{t:this.shubianli},{t:this.tubianli},{t:this.digui},{t:this.kuaisu},{t:this.instance_2},{t:this.hanoi},{t:this.instance_1},{t:this.instance}]}).wait(1));
+	this.instance_2 = new lib.CachedBmp_1();
+	this.instance_2.setTransform(472.9,57.2,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.Fibo},{t:this.erfen},{t:this.shubianli},{t:this.tubianli},{t:this.digui},{t:this.kuaisu},{t:this.guibing},{t:this.hanoi},{t:this.instance_1},{t:this.instance}]}).wait(1));
 	this.instance.addEventListener("tick", AdobeAn.handleFilterCache);
 	this.hanoi.addEventListener("tick", AdobeAn.handleFilterCache);
-	this.instance_2.addEventListener("tick", AdobeAn.handleFilterCache);
+	this.guibing.addEventListener("tick", AdobeAn.handleFilterCache);
 	this.kuaisu.addEventListener("tick", AdobeAn.handleFilterCache);
 	this.digui.addEventListener("tick", AdobeAn.handleFilterCache);
 	this.tubianli.addEventListener("tick", AdobeAn.handleFilterCache);
@@ -726,7 +731,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1747560493611", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1747647431845", id:"index_atlas_1"}
 	],
 	preloads: []
 };
