@@ -11,7 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>递归算法交互式学习平台</title>
+<title>index</title>
 <!-- write your code here -->
 <style>
   #animation_container {
@@ -666,15 +666,20 @@ if (reversed == null) { reversed = false; }
 		function GoToguibing() {
 			window.open("https://chenyue03.github.io/Learning-Platform/归并排序.html", "_blank");
 		}
+		this.huifu.addEventListener("click", GoTohuifu);
+		function GoTohuifu() {
+			window.open("https://chenyue03.github.io/Learning-Platform/恢复二叉树.html", "_blank");
+		}
 	}
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 	// 按钮
-	this.instance = new lib.遍历构建二叉树();
-	this.instance.setTransform(633.65,533.45,3.15,3.15);
-	new cjs.ButtonHelper(this.instance, 0, 1, 2, false, new lib.遍历构建二叉树(), 3);
-	this.instance_1 = new lib.校徽();
-	this.instance_1.setTransform(972,623);
+	this.huifu = new lib.遍历构建二叉树();
+	this.huifu.name = "huifu";
+	this.huifu.setTransform(633.65,533.45,3.15,3.15);
+	new cjs.ButtonHelper(this.huifu, 0, 1, 2, false, new lib.遍历构建二叉树(), 3);
+	this.instance = new lib.校徽();
+	this.instance.setTransform(972,623);
 	this.hanoi = new lib.汉诺塔();
 	this.hanoi.name = "hanoi";
 	this.hanoi.setTransform(920.5,533.45,3.1505,3.1494);
@@ -707,10 +712,10 @@ if (reversed == null) { reversed = false; }
 	this.Fibo.name = "Fibo";
 	this.Fibo.setTransform(348.4,258.2,3.1505,3.1505,0,0,0,0.2,0);
 	new cjs.ButtonHelper(this.Fibo, 0, 1, 2, false, new lib.tubeyellow(), 3);
-	this.instance_2 = new lib.CachedBmp_1();
-	this.instance_2.setTransform(472.9,57.2,0.5,0.5);
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.Fibo},{t:this.erfen},{t:this.shubianli},{t:this.tubianli},{t:this.digui},{t:this.kuaisu},{t:this.guibing},{t:this.hanoi},{t:this.instance_1},{t:this.instance}]}).wait(1));
-	this.instance.addEventListener("tick", AdobeAn.handleFilterCache);
+	this.instance_1 = new lib.CachedBmp_1();
+	this.instance_1.setTransform(472.9,57.2,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.Fibo},{t:this.erfen},{t:this.shubianli},{t:this.tubianli},{t:this.digui},{t:this.kuaisu},{t:this.guibing},{t:this.hanoi},{t:this.instance},{t:this.huifu}]}).wait(1));
+	this.huifu.addEventListener("tick", AdobeAn.handleFilterCache);
 	this.hanoi.addEventListener("tick", AdobeAn.handleFilterCache);
 	this.guibing.addEventListener("tick", AdobeAn.handleFilterCache);
 	this.kuaisu.addEventListener("tick", AdobeAn.handleFilterCache);
@@ -731,7 +736,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1747647431845", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png", id:"index_atlas_1"}
 	],
 	preloads: []
 };
